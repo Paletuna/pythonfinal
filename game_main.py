@@ -180,7 +180,7 @@ def wk1scavenge():
 		supplies = supplies + 2
 		time.sleep(1)
 		print("You now have " + str(supplies) + " supplies.")
-	elif event == 2 and supplies < 2:
+	elif event == 2 and supplies > 2:
 		time.sleep(1)
 		print("You found a broken down bike, and can either salvage it for supplies, or repair it using 3 supplies. Enter repair/salvage")
 		done = 0
@@ -201,7 +201,7 @@ def wk1scavenge():
 				time.sleep(1)
 				print("You now have " + str(supplies) + " supplies.")
 				done = 1
-	elif event == 2 and supplies > 3:
+	elif event == 2 and supplies < 3:
 		time.sleep(1)
 		print("You manage to salvage some supplies from the nearby shed")
 		supplies = supplies + 2
